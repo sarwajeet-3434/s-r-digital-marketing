@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S&R Digital Marketing Solutions - Fresh Ideas, Bold Strategies, Real Results">
+    <meta name="keywords" content="digital marketing, SEO, social media, web development, branding">
+    <title>S&R Digital Marketing Solutions - Fresh Ideas, Bold Strategies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+            <img src="logo.ico" alt="S&R Digital Marketing Solutions Logo" class="logo-img">
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a onclick="showPage('home')" class="nav-link active">Home</a></li>
+                <li><a onclick="showPage('about')" class="nav-link">About</a></li>
+                <li><a onclick="showPage('services')" class="nav-link">Services</a></li>
+                <li><a onclick="showPage('contact')" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page">
+        <section class="hero">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-sparkles"></i>
+                    <span>Your Fresh Digital Marketing Partner</span>
+                </div>
+                <h1>S&R Digital Marketing Solutions</h1>
+                <p class="tagline">Fresh Ideas. Bold Strategies. Real Results.</p>
+                <p class="hero-description">
+                    We're a young, dynamic team ready to transform your brand's digital presence. With fresh perspectives and cutting-edge strategies, we bring energy, creativity, and dedication to every project. Let's build something amazing together.
+                </p>
+                <div class="hero-buttons">
+                    <a onclick="showPage('services')" class="btn btn-primary">
+                        Explore Our Services
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a onclick="showPage('contact')" class="btn btn-outline">
+                        Let's Talk
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+                
+                <!-- Why Choose Us Section -->
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovative Thinking</h3>
+                        <p>Fresh perspectives that challenge the status quo</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Agile & Adaptive</h3>
+                        <p>Quick to respond, fast to execute</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Passionate Team</h3>
+                        <p>We treat your success as our own</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Growth Focused</h3>
+                        <p>Strategies designed for measurable impact</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Value Proposition Section -->
+        <section class="value-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Why Choose Us</span>
+                    <h2 class="section-title">Starting Fresh, Thinking Big</h2>
+                    <p class="section-subtitle">We may be new, but our commitment to your success is unwavering</p>
+                </div>
+
+                <div class="value-grid">
+                    <div class="value-card">
+                        <div class="value-number">01</div>
+                        <div class="value-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Hungry for Success</h3>
+                        <p>As a new agency, we're eager to prove ourselves. Your success is our success, and we'll go the extra mile to deliver exceptional results.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-number">02</div>
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Personalized Attention</h3>
+                        <p>You won't be just another client. We offer dedicated, one-on-one service and build lasting partnerships with every brand we work with.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-number">03</div>
+                        <div class="value-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Latest Trends & Tools</h3>
+                        <p>We're well-versed in the newest digital marketing strategies, social media trends, and cutting-edge tools to keep you ahead of the competition.</p>
+                    </div>
+
+                    <div class="value-card">
+                        <div class="value-number">04</div>
+                        <div class="value-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Competitive Pricing</h3>
+                        <p>Get premium quality services at startup-friendly rates. We believe great marketing should be accessible to businesses of all sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Elevate Your Brand?</h2>
+                    <p>Let's create something extraordinary together. Book a free consultation and discover how we can help your business thrive in the digital world.</p>
+                    <div class="cta-buttons">
+                        <a onclick="showPage('contact')" class="btn btn-light">
+                            Get Started Today
+                            <i class="fas fa-rocket"></i>
+                        </a>
+                        <a onclick="showPage('services')" class="btn btn-outline-light">
+                            View Our Services
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page hidden">
+        <section class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">About Us</span>
+                    <h2 class="section-title">About S&R Digital Marketing Solutions</h2>
+                    <p class="section-subtitle">Your trusted partner in digital transformation</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Our Story</h3>
+                        <p>
+                            S&R Digital Marketing Solutions was born from a passion to help businesses thrive in the digital landscape. Founded by two digital enthusiasts who recognized the gap between traditional marketing and the evolving online world, we set out to create a company that bridges this divide with innovation and authenticity.
+                        </p>
+                        <p>
+                            As a fresh startup, we bring energy, enthusiasm, and a genuine desire to prove ourselves. Every client is an opportunity to showcase our skills and build lasting partnerships based on trust and results.
+                        </p>
+                    </div>
+                    
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Why Choose Us</h3>
+                        <p>
+                            We're not just another marketing agency. We're your growth partners, committed to understanding your business goals and delivering solutions that matter. Our team combines creativity with analytics, ensuring every campaign is both compelling and effective.
+                        </p>
+                        <p>
+                            With expertise spanning from SEO to social media, web development to influencer marketing, we offer comprehensive solutions under one roof. We stay ahead of trends, embrace innovation, and most importantly, we care about your success as much as you do.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mission-vision">
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Our Mission</h3>
+                        <p>To empower businesses with innovative digital marketing strategies that drive growth, build authentic connections, and deliver measurable results. We strive to be transparent partners who prioritize our clients' success above all.</p>
+                    </div>
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Our Vision</h3>
+                        <p>To become the most trusted digital marketing partner for businesses worldwide, recognized for our creativity, integrity, and commitment to excellence. We envision a future where every brand has the tools and expertise to thrive online.</p>
+                    </div>
+                </div>
+
+                <div class="section-header" style="margin-top: 5rem;">
+                    <span class="section-badge">Our Team</span>
+                    <h2 class="section-title">Meet Our Team</h2>
+                    <p class="section-subtitle">The creative minds behind your success</p>
+                </div>
+
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Sarah Rodriguez</h3>
+                        <p class="role">Co-Founder & CEO</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Rahul Sharma</h3>
+                        <p class="role">Co-Founder & CTO</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Priya Mehta</h3>
+                        <p class="role">Creative Director</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h3>Alex Johnson</h3>
+                        <p class="role">SEO Specialist</p>
+                        <div class="team-social">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Services Page -->
+    <div id="services" class="page hidden">
+        <section class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">What We Offer</span>
+                    <h2 class="section-title">Our Services</h2>
+                    <p class="section-subtitle">Comprehensive digital solutions tailored for your growth</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-service="1">
+                        <div class="service-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Branding & Content Creation</h3>
+                        <p>Craft compelling brand identities and engaging content that resonates with your audience. From logo design to complete brand guidelines, we tell your story beautifully.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="2">
+                        <div class="service-icon">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h3>Google My Business Optimization</h3>
+                        <p>Boost your local visibility and attract nearby customers. We optimize your GMB profile to improve local search rankings and drive foot traffic to your business.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="3">
+                        <div class="service-icon">
+                            <i class="fas fa-hashtag"></i>
+                        </div>
+                        <h3>Social Media Marketing</h3>
+                        <p>Build engaged communities across all platforms. Our strategic approach combines organic growth with paid campaigns to maximize your social media presence and ROI.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="4">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Search Engine Optimization</h3>
+                        <p>Dominate search results with our proven SEO strategies. We optimize your website for better rankings, increased organic traffic, and higher conversion rates.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="5">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Strategy & Paid Ads</h3>
+                        <p>Data-driven advertising campaigns that deliver results. From Google Ads to social media advertising, we create, manage, and optimize campaigns for maximum return.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="6">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Web/App Development</h3>
+                        <p>Beautiful, functional websites and mobile apps that convert visitors into customers. We build responsive, fast-loading platforms optimized for user experience.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="7">
+                        <div class="service-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>E-commerce Solutions</h3>
+                        <p>Launch and grow your online store with our comprehensive e-commerce services. From platform setup to payment integration, we handle everything for seamless selling.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="8">
+                        <div class="service-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Video Editing</h3>
+                        <p>Professional video content that captivates and converts. Our expert editors transform raw footage into polished, engaging videos for any platform or purpose.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="service-card" data-service="9">
+                        <div class="service-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Influencer Marketing</h3>
+                        <p>Connect with the right influencers to amplify your brand message. We manage end-to-end influencer campaigns that drive authentic engagement and measurable results.</p>
+                        <div class="service-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page hidden">
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Contact Us</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss how we can help grow your business</p>
+                </div>
+                
+                <form id="contactForm" class="contact-form" action="https://formspree.io/f/movkovej" method="POST">
+                    <div class="form-row">
+                    <div class="form-group">
+                    <label for="name">
+                    <i class="fas fa-user"></i>
+                    Name
+                    </label>
+                    <input type="text" id="name" name="name" required placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i>
+                            Email
+                        </label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone">
+                        <i class="fas fa-phone"></i>
+                        Phone Number
+                    </label>
+                    <input type="tel" id="phone" name="phone" required placeholder="+91-XXXXXXXXXX">
+                </div>
+                <div class="form-group">
+                    <label for="message">
+                        <i class="fas fa-comment"></i>
+                        Message
+                    </label>
+                    <textarea id="message" name="message" required placeholder="Tell us about your project or inquiry..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+                                </form>
+
+
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info">
+                            <h3>Contact Information</h3>
+                            <p class="contact-info-subtitle">Reach out to us through any of these channels</p>
+                            
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-item-content">
+                                    <h4>Email</h4>
+                                    <p>srdigitalmarketingsolution1610@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-item-content">
+                                    <h4>Phone</h4>
+                                    <p>+91-7887957388</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-item-content">
+                                    <h4>Location</h4>
+                                    <p>Pune, Maharashtra</p>
+                                </div>
+                            </div>
+
+                            <div class="social-section">
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <img src="logo.ico" alt="S&R Digital Marketing Solutions Logo" class="logo-img">
+                <span class="logo-subtext">Digital Marketing Solutions</span>
+            </div>
+            <p class="footer-text">&copy; 2025 S&R Digital Marketing Solutions | All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="#" onclick="showPage('home')">Home</a>
+                <a href="#" onclick="showPage('about')">About</a>
+                <a href="#" onclick="showPage('services')">Services</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
